@@ -1,0 +1,188 @@
+% Init
+\documentclass[letterpaper, 11pt]{article}
+
+\pdfgentounicode=1
+
+% font
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{noto}
+
+% packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage{setspace}
+\usepackage{enumitem}
+
+\usepackage[left=1.25cm,right=1.25cm,top=2cm,bottom=2cm]{geometry}
+
+% custom
+
+% command macros
+\newcommand{\iconSpace}{\hspace{1px}}
+\newcommand{\bulletSpace}{\vspace{-8pt}}
+\newcommand{\hSpace}{\hspace{8px}}
+\newcommand{\secStartSpace}{\vspace{3pt}}
+\newcommand{\secEndSpace}{\vspace{5pt}}
+\newcommand{\spaceCollapse}{\vspace{-5pt}}
+% use the macro for work experience header
+% arg 1 = header title
+% arg 2 = position title (subtitle (in italics)
+% arg 3 = date
+\newcommand{\workHeader}[3]{
+\noindent \textbf{#1} \hfill \textbf{#3}\\
+	\textit{#2}
+}
+
+% line spacing
+% \linespread{1.15}
+
+% colors
+\definecolor{red}{RGB}{255, 0, 0}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=red,
+    urlcolor=red,
+}
+
+% indent space
+\titlespacing{\section}{0pt}{1px}{2ex}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\begin{document}
+
+% ------------- header ------------- %
+\begin{center} 
+	{\Large \textbf{John Wick}}\\
+	\vspace{1px}
+	% "footnotes" (icon + link)
+	{\footnotesize
+		\faicon{envelope} \href{mailto:johnwick@gmail.com}{johnwick@gmail.com} 
+		\hSpace
+		\faicon{globe} \iconSpace \href{johnwick.com}{johnwick.com} 
+		\hSpace 
+		\faicon{linkedin} \hspace{.1px} \href{https://www.linkedin.com/in/john-wick/}{john-wick} 
+		\hSpace
+		}\\
+	{\footnotesize
+		\faicon{github} \iconSpace \href{https://github.com/john-wick}{john wick}
+		\hSpace 
+		\faicon{phone} \iconSpace
+		(999) 999-9999
+		% \hSpace 
+		% \faicon{map-marker} \iconSpace
+		% Regina, SK
+	}
+\end{center}
+\spaceCollapse
+% ------------- end header ------------- %
+
+
+% ------------- education ------------- %
+\section{\color{red} \textbf{Education}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+	\textbf{University of America}\hfill \textbf{September 2019 - April 2023}\\
+	\setlength\parindent{1cm} B.Sc. Martial Arts with Honors
+\end{addmargin}
+\secEndSpace
+% ------------- end education ------------- %
+
+
+% ------------- work experience ------------- %
+\section{\color{red} \textbf{Work Experience}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+		
+	\noindent \textbf{john's Garage} \hfill \textbf{September 2021 - Present}\\
+	\textit{Full-Stack Assassin}
+	\spaceCollapse
+	\begin{itemize}
+		\item Helped clean the weed where it should not be
+		      \bulletSpace
+		\item Wrote \textbf{testable} and \textbf{well documented} plan
+	\end{itemize}
+		
+	\workHeader{Examplar 2}{Co-founder}{September 2021 - Present} 
+	\spaceCollapse
+	\begin{itemize}
+		\item Top-Secret ! most don't understand
+	\end{itemize}
+\end{addmargin}
+\secEndSpace
+% ------------- end experience ------------- %
+
+
+% ------------- projects ------------- %
+\section{\color{red} \textbf{Projects}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+		
+	% ------------- project 1 ------------- %
+	\noindent\href{https://github.com/john-wick}{\textbf{Project 1:}}  \hfill \textbf{Aug 2022} 
+		
+	\noindent A visit to bar
+	\spaceCollapse
+	\begin{itemize}
+		\item \textbf{Technology/Tools:} Pencil
+		      \bulletSpace
+		\item Source and working demo: \faicon{github} \href{https://github.com/john-wick}{\underline{john-wick.com/emojis-finder}}
+	\end{itemize}
+	% ------------- end project 1 ------------- %
+	
+	% ------------- project 2 ------------- %
+	\noindent\href{https://github.com/john-wick}{\textbf{Project 2:}}  \hfill \textbf{July 2023} 
+		
+	\noindent Underworld dealings
+	\spaceCollapse
+	\begin{itemize}
+		\item \textbf{Technology/Tools:} Knife, Pencil, sharpner, Armour
+		      \bulletSpace
+		\item Source and working demo: \faicon{github} \href{https://github.com/john-wick}{\underline{john-wick.com/emojis-finder}}
+	\end{itemize}
+	% ------------- end project 2 ------------- %
+		
+		
+\end{addmargin}
+\secEndSpace
+% ------------- end projects ------------- %
+
+
+% ------------- skills ------------- %
+\section{\color{red} \textbf{Skills}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+	\setstretch{1.125}
+	\noindent \textbf{Proficient:} Yes \\
+	\noindent \textbf{Languages:} English, Russian, Japanese, etc \\
+\end{addmargin}
+\secEndSpace
+% ------------- end skills ------------- %
+
+
+% ------------- achievements ------------- %
+\section{\color{red} \textbf{Achievements}}
+\secStartSpace
+
+\begin{addmargin}[1em]{1em}
+	\begin{itemize}[itemsep=-2.25pt]
+		\item john Award \hfill  \textbf{2019}
+		\item Top of the Class \hfill \textbf{2014-2019}
+	\end{itemize}
+\end{addmargin}
+% ------------- end achievements ------------- %
+
+\end{document}
